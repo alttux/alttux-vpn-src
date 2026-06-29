@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="Основная информация о подписке и способах подключения">
 	<link rel="icon" type="image/x-icon" href="https://google.com/pic.png">
-	<title></title>
+	<title>AltTux VPN Sub</title>
 
 	<!-- Set the theme at the very beginning, so as not to scare a user with a white screen while loading the page on slow devices -->
 	<script type="text/javascript">
@@ -50,10 +50,32 @@
 	</header> -->
 
 	<main>
+		<button type="button" id="btnSwitchTheme" class="theme-toggle-btn" aria-label="Переключить тему">
+			<svg id="themeIcon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+				<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+			</svg>
+		</button>
 		<div class="logo-container">
-			<img src="https://raw.githubusercontent.com/alttux/alttux-vpn-src/main/branding/logo.jpg" alt="AltTux VPN" class="brand-logo">
+			<img src="https://raw.githubusercontent.com/agit lttux/alttux-vpn-src/main/branding/logo.png" alt="AltTux VPN" class="brand-logo">
 		</div>
 		<div class="modules">
+			<div class="module happ-module">
+				<div class="happ-row">
+					<a href="#" class="btn-happ" id="btnHapp">Подключить в Happ</a>
+					<a href="happ://routing/onadd/eyJOYW1lIjoiUm9zY29tVlBOIiwiR2xvYmFsUHJveHkiOiJ0cnVlIiwiVXNlQ2h1bmtGaWxlcyI6InRydWUiLCJSZW1vdGVEbnMiOiI4LjguOC44IiwiRG9tZXN0aWNEbnMiOiI3Ny44OC44LjgiLCJSZW1vdGVETlNUeXBlIjoiRG9IIiwiUmVtb3RlRE5TRG9tYWluIjoiaHR0cHM6Ly84LjguOC44L2Rucy1xdWVyeSIsIlJlbW90ZUROU0lQIjoiOC44LjguOCIsIkRvbWVzdGljRE5TVHlwZSI6IkRvSCIsIkRvbWVzdGljRE5TRG9tYWluIjoiaHR0cHM6Ly83Ny44OC44LjgvZG5zLXF1ZXJ5IiwiRG9tZXN0aWNETlNJUCI6Ijc3Ljg4LjguOCIsIkdlb2lwdXJsIjoiaHR0cHM6Ly9jZG4uanNkZWxpdnIubmV0L2doL2h5ZHJhcG9uaXF1ZS9yb3Njb212cG4tZ2VvaXBAMjAyNjA2MjkwODIzL3JlbGVhc2UvZ2VvaXAuZGF0IiwiR2Vvc2l0ZXVybCI6Imh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9oeWRyYXBvbmlxdWUvcm9zY29tdnBuLWdlb3NpdGVAMjAyNjA0MTUyMjM1L3JlbGVhc2UvZ2Vvc2l0ZS5kYXQiLCJMYXN0VXBkYXRlZCI6IjE3ODI3MjE0NDciLCJEbnNIb3N0cyI6eyJsa2ZsMi5uYWxvZy5ydSI6IjIxMy4yNC42NC4xNzUiLCJsa25wZC5uYWxvZy5ydSI6IjIxMy4yNC42NC4xODEifSwiUm91dGVPcmRlciI6ImJsb2NrLXByb3h5LWRpcmVjdCIsIkRpcmVjdFNpdGVzIjpbImdlb3NpdGU6cHJpdmF0ZSIsImdlb3NpdGU6Y2F0ZWdvcnktcnUiLCJnZW9zaXRlOndoaXRlbGlzdCIsImdlb3NpdGU6bWljcm9zb2Z0IiwiZ2Vvc2l0ZTphcHBsZSIsImdlb3NpdGU6ZXBpY2dhbWVzIiwiZ2Vvc2l0ZTpyaW90IiwiZ2Vvc2l0ZTplc2NhcGVmcm9tdGFya292IiwiZ2Vvc2l0ZTpzdGVhbSIsImdlb3NpdGU6dHdpdGNoIiwiZ2Vvc2l0ZTpwaW50ZXJlc3QiLCJnZW9zaXRlOmZhY2VpdCJdLCJEaXJlY3RJcCI6WyJnZW9pcDpwcml2YXRlIiwiZ2VvaXA6ZGlyZWN0Il0sIlByb3h5U2l0ZXMiOlsiZ2Vvc2l0ZTpnb29nbGUtcGxheSIsImdlb3NpdGU6Z2l0aHViIiwiZ2Vvc2l0ZTp0d2l0Y2gtYWRzIiwiZ2Vvc2l0ZTp5b3V0dWJlIiwiZ2Vvc2l0ZTp0ZWxlZ3JhbSJdLCJQcm94eUlwIjpbXSwiQmxvY2tTaXRlcyI6WyJnZW9zaXRlOndpbi1zcHkiLCJnZW9zaXRlOnRvcnJlbnQiLCJnZW9zaXRlOmNhdGVnb3J5LWFkcyJdLCJCbG9ja0lwIjpbXSwiRG9tYWluU3RyYXRlZ3kiOiJJUElmTm9uTWF0Y2giLCJGYWtlRE5TIjoiZmFsc2UifQo=" class="btn-happ btn-routing" id="btnRouting">Применить роутинг</a>
+				</div>
+				<div class="support-row">
+					<a href="https://t.me/alttuxvpn" target="_blank" class="btn-support" rel="noopener noreferrer">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+						Чат поддержки
+					</a>
+					<button type="button" class="btn-support" onclick="copyToClipboard(window.location.href); showNotification('toast');">
+						<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+						Скопировать подписку
+					</button>
+				</div>
+				<div id="toast">Подписка скопирована</div>
+			</div>
 			<div class="module subscription">
 				<h3 class="module-title">Подписка</h3>
 				<ul class="list-group list-group-flush">
@@ -66,19 +88,8 @@
 				    <li class="list-group-item d-flex justify-content-between align-items-center">
 				    	Истекает<span id="expire"></span><script>document.getElementById('expire').innerHTML = expireDateVar</script>
 				    </li>
-				    <li class="list-group-item d-flex justify-content-between align-items-center">
-						<a href="https://t.me/alttuxvpn" target="_blank" class="link-dark" rel="noopener noreferrer">Чат поддержки</a>
-				    </li>
-				    <li style="height: 45px;" class="list-group-item d-flex align-items-center">
-						<button style="padding: 0;" type="button" class="btn btn-link link-dark" onclick="copyToClipboard(window.location.href); showNotification('toast');">Скопировать подписку</button>
-						<div id="toast">Подписка скопирована</div>
-				    </li>
-				    <li class="list-group-item d-flex justify-content-between align-items-center">
-						<form class="form-check form-switch">
-						  <input class="form-check-input" type="checkbox" id="btnSwitchTheme">
-						  <label class="form-check-label" for="btnSwitchTheme">Тёмный режим</label>
-						</form>
-				    </li>		
+
+		
 				</ul>
 			</div>
 
@@ -358,9 +369,8 @@
 
 		html {
 		    margin: auto;
-		    max-width: 520px;
-		    min-width: 300px;
-		    padding: 0 25px 50px 25px;
+		    max-width: 540px;
+		    padding: 0 16px 50px 16px;
 		}
 
 		.dot {
@@ -395,6 +405,12 @@
 		.subscription li {
 			padding-top: 10px;
 			padding-bottom: 10px;
+		}
+
+		.subscription .list-group-item a,
+		.subscription .list-group-item button.btn-link {
+			text-decoration: underline;
+			text-underline-offset: 2px;
 		}
 
 		.accordion-body .list-group {
@@ -469,6 +485,127 @@
 			width: 25px;
 			height: 25px;
 			margin-left: auto;
+		}
+
+		.happ-module {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 14px;
+			padding: 25px 20px;
+		}
+
+		.btn-happ {
+			display: inline-block;
+			padding: 16px 40px;
+			font-size: 20px;
+			font-weight: 700;
+			color: #fff;
+			background: linear-gradient(135deg, #6c5ce7, #a29bfe);
+			border-radius: 14px;
+			text-decoration: none;
+			text-align: center;
+			transition: transform 0.2s, box-shadow 0.2s;
+			box-shadow: 0 6px 24px rgba(108, 92, 231, 0.4);
+			letter-spacing: 0.5px;
+		}
+
+		.btn-happ:hover {
+			color: #fff;
+			transform: translateY(-2px);
+			box-shadow: 0 10px 32px rgba(108, 92, 231, 0.55);
+		}
+
+		[data-bs-theme=dark] .btn-happ {
+			box-shadow: 0 6px 24px rgba(108, 92, 231, 0.5);
+		}
+
+		[data-bs-theme=dark] .btn-happ:hover {
+			box-shadow: 0 10px 32px rgba(108, 92, 231, 0.7);
+		}
+
+		.btn-routing {
+			background: linear-gradient(135deg, #00b894, #55efc4);
+			box-shadow: 0 6px 24px rgba(0, 184, 148, 0.4);
+		}
+
+		.btn-routing:hover {
+			box-shadow: 0 10px 32px rgba(0, 184, 148, 0.55);
+		}
+
+		.happ-row {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 14px;
+			width: 100%;
+		}
+
+		.support-row {
+			display: flex;
+			justify-content: center;
+			gap: 12px;
+			flex-wrap: wrap;
+			max-width: 100%;
+		}
+
+		.btn-support {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			gap: 8px;
+			padding: 10px 22px;
+			font-size: 15px;
+			font-weight: 600;
+			white-space: nowrap;
+			flex: 1;
+			color: #fff;
+			background: linear-gradient(135deg, #0984e3, #74b9ff);
+			border: none;
+			border-radius: 12px;
+			text-decoration: none;
+			cursor: pointer;
+			transition: transform 0.2s, box-shadow 0.2s;
+			box-shadow: 0 4px 16px rgba(9, 132, 227, 0.35);
+		}
+
+		.btn-support:hover {
+			color: #fff;
+			transform: translateY(-2px);
+			box-shadow: 0 8px 24px rgba(9, 132, 227, 0.5);
+		}
+
+		.btn-support:last-child {
+			background: linear-gradient(135deg, #636e72, #b2bec3);
+			box-shadow: 0 4px 16px rgba(99, 110, 114, 0.35);
+		}
+
+		.btn-support:last-child:hover {
+			box-shadow: 0 8px 24px rgba(99, 110, 114, 0.5);
+		}
+
+		[data-bs-theme=dark] .btn-support {
+			box-shadow: 0 4px 16px rgba(9, 132, 227, 0.45);
+		}
+
+		[data-bs-theme=dark] .btn-support:hover {
+			box-shadow: 0 8px 24px rgba(9, 132, 227, 0.65);
+		}
+
+		[data-bs-theme=dark] .btn-support:last-child {
+			box-shadow: 0 4px 16px rgba(99, 110, 114, 0.45);
+		}
+
+		[data-bs-theme=dark] .btn-support:last-child:hover {
+			box-shadow: 0 8px 24px rgba(99, 110, 114, 0.65);
+		}
+
+		[data-bs-theme=dark] .btn-routing {
+			box-shadow: 0 6px 24px rgba(0, 184, 148, 0.5);
+		}
+
+		[data-bs-theme=dark] .btn-routing:hover {
+			box-shadow: 0 10px 32px rgba(0, 184, 148, 0.7);
 		}
 
 		.module-title {
@@ -565,8 +702,12 @@
 
 		/* Full dark theme */
 		[data-bs-theme=dark] .link-dark {
-			color: #dee2e6 !important; 
-			text-decoration: none;
+			color: #dee2e6 !important;
+		}
+
+		.subscription .list-group-item a,
+		.subscription .list-group-item button.btn-link {
+			text-decoration-color: #0d6efd;
 		}
 
 		[data-bs-theme=dark] #toast {
@@ -606,6 +747,134 @@
 		    color: #e0e0e0;
 		}
 
+
+		.theme-toggle-btn {
+			position: fixed;
+			top: 16px;
+			right: 16px;
+			width: 44px;
+			height: 44px;
+			border-radius: 50%;
+			border: none;
+			background: rgba(128, 128, 128, 0.3);
+			backdrop-filter: blur(8px);
+			-webkit-backdrop-filter: blur(8px);
+			color: inherit;
+			cursor: pointer;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			transition: background 0.2s, transform 0.2s;
+			z-index: 1000;
+			padding: 0;
+		}
+		.theme-toggle-btn:hover {
+			background: rgba(128, 128, 128, 0.5);
+			transform: scale(1.1);
+		}
+		.theme-toggle-btn:active {
+			transform: scale(0.95);
+		}
+		[data-bs-theme=dark] .theme-toggle-btn svg {
+			filter: none;
+		}
+
+		/* ─── Responsive: очень маленькие телефоны (≤ 360px) ─── */
+		@media (max-width: 360px) {
+			html {
+				padding: 0 10px 40px 10px;
+			}
+			.module {
+				padding: 12px 14px;
+			}
+			.btn-happ {
+				padding: 14px 20px;
+				font-size: 16px;
+				width: 100%;
+			}
+			.brand-logo {
+				max-width: 140px;
+			}
+		}
+
+		/* ─── Responsive: телефоны (361px — 575px) ─── */
+		@media (min-width: 361px) and (max-width: 575px) {
+			.module {
+				padding: 14px 16px;
+			}
+			.btn-happ {
+				width: 100%;
+			}
+		}
+
+		/* ─── Responsive: планшеты (≥ 576px) ─── */
+		@media (min-width: 576px) {
+			html {
+				max-width: 620px;
+				padding: 0 24px 60px 24px;
+			}
+			.happ-row {
+				flex-direction: row;
+				justify-content: center;
+			}
+			.btn-happ {
+				padding: 16px 32px;
+				font-size: 18px;
+			}
+		}
+
+		/* ─── Responsive: ПК (≥ 768px) ─── */
+		@media (min-width: 768px) {
+			html {
+				max-width: 980px;
+				padding: 0 32px 60px 32px;
+			}
+			.modules {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 20px;
+				align-items: start;
+			}
+			.happ-module {
+				grid-column: 1 / -1;
+			}
+			.module:last-child {
+				grid-column: 1 / -1;
+			}
+			.module {
+				margin-bottom: 0;
+			}
+			.brand-logo {
+				max-width: 200px;
+			}
+		}
+
+		/* ─── Responsive: большие ПК (≥ 1200px) ─── */
+		@media (min-width: 1200px) {
+			html {
+				max-width: 1100px;
+			}
+			.modules {
+				grid-template-columns: 1fr 1fr 1fr;
+				gap: 24px;
+			}
+			.happ-module {
+				grid-column: 1 / -1;
+			}
+			.module:nth-child(2) {
+				grid-column: 1;
+			}
+			.module:nth-child(3) {
+				grid-column: 2 / 4;
+			}
+			.module:last-child {
+				grid-column: 1 / -1;
+			}
+			.btn-happ {
+				padding: 18px 44px;
+				font-size: 20px;
+			}
+		}
 	</style>
 
 	<script type="text/javascript">
@@ -622,12 +891,26 @@
 			navigator.clipboard.writeText(text);
 		}
 
-		const buttonSwitchTheme = document.getElementById('btnSwitchTheme');
-		buttonSwitchTheme.checked = currentThemeSetting === 'dark';
-		buttonSwitchTheme.addEventListener("click", () => {
+		const btnTheme = document.getElementById('btnSwitchTheme');
+		const themeIcon = document.getElementById('themeIcon');
+		function updateThemeIcon() {
+			if (currentThemeSetting === 'dark') {
+				themeIcon.innerHTML = '<circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>';
+			} else {
+				themeIcon.innerHTML = '<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>';
+			}
+		}
+		updateThemeIcon();
+		btnTheme.addEventListener("click", () => {
 			  const newTheme = currentThemeSetting === "dark" ? "light" : "dark";
-			  setTheme(newTheme);			  
+			  setTheme(newTheme);
+			  updateThemeIcon();
 		});
+
+		const btnHapp = document.getElementById('btnHapp');
+		if (btnHapp) {
+			btnHapp.href = 'happ://add/' + window.location.href;
+		}
 
 		const links = document.getElementsByClassName('self-link');
 		Array.from(links).forEach(link => {
